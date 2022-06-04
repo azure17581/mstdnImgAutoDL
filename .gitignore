@@ -1,0 +1,11 @@
+/.vs
+/Debug
+/Release
+/x64
+/mstdnImgAutoDL/Debug
+/mstdnImgAutoDL/DL
+/mstdnImgAutoDL/Release
+/mstdnImgAutoDL/x64
+/mstdnImgAutoDL/tags.csv
+/mstdnImgAutoDL/token.txt
+/mstdnImgAutoDL/urlData.txt
