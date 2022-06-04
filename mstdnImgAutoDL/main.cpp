@@ -190,9 +190,9 @@ int main() {
 		}
 
 		for (size_t i = 0; i < fileList.size(); i++) {
-			csvSt << R"(")" << curPath << "\\" << fileList[i].name << R"(",")" << fileList[i].hash << R"(","source : )" << fileList[i].url << R"(",")" << fileList[i].tag << R"(")";
+			csvSt << R"(")" << curPath << "\\" << fileList[i].name << R"(",")" << fileList[i].hash << R"(","source : )" << fileList[i].url << R"(","mstdnImgAutoDL\userID\)" << fileList[i].tag << R"(")";
 			if (fileList[i].nsfw) {
-				csvSt << R"(,"NSFW")";
+				csvSt << R"(,"mstdnImgAutoDL\NSFW")";
 			}
 			csvSt << endl;
 		}
