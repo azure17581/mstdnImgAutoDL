@@ -1,6 +1,6 @@
 # mstdnImgAutoDL
 マストドンの [pawoo.net](https://pawoo.net/about) のアカウントで「お気に入り」したトゥートに添付された画像や動画をダウンロードする。  
-同時に画像管理ソフト [at_picture](http://artisticimitation.web.fc2.com/adbtest/) に対応した CSV を出力する。これにはダウンロードしたファイルのパス，MD5ハッシュ値，ファイルの添付されていた投稿のリンク，ユーザーID が含まれる。これを at_picture で読ませることで，このソフトウェアが保存した画像を，ユーザーIDをタグとして管理できるようになる。  
+同時に画像管理ソフト [at_picture](http://artisticimitation.web.fc2.com/adbtest/) ([wiki](https://w.atwiki.jp/at_picture/)) に対応した CSV を出力する。これにはダウンロードしたファイルのパス，MD5ハッシュ値，ファイルの添付されていた投稿のリンク，ユーザーID が含まれる。これを at_picture で読ませることで，このソフトウェアが保存した画像を，ユーザーIDをタグとして管理できるようになる。  
 さらに，コメントとしてその画像が添付されていた投稿の URL も DB に追加されているため，それを踏んでブラウザで該当の投稿を開くことができる。
 
 ## 開発環境
@@ -44,5 +44,6 @@ vcpkg install cryptopp
 - 保存処理が終了すると，[at_picture](http://artisticimitation.web.fc2.com/adbtest/) に対応した CSV `tags.csv` が出力される。既に存在する場合は，ファイルに情報が追記される。
 - 添付ファイルを保存した投稿の直近10件の URL が `urlData.txt` に保存される。
 
+`tags.csv` の使い方は [wiki](https://w.atwiki.jp/at_picture/pages/50.html) を参照。
 ### トークンを変更する場合
 単に `token.txt` を削除してください。その後は `初回起動時` と同様。
